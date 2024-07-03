@@ -1,7 +1,9 @@
 "use strict";
 
 const   cardWrapper = document.getElementById("cards"),
-        search = document.getElementById("search");
+        search = document.getElementById("search"),
+        perfectSearchFilm = document.getElementById("search_film"),
+        perfectGenreFilm = document.getElementById("genre_film");
         
 const data = movies.splice(0, 100);
 
@@ -15,7 +17,7 @@ const normalize = data.map(el => {
         genres: el.categories,
         id: el.imdbId,
         rating: el.imdbRating,
-        time: `${Math.floor(el.runtime / 60)} h ${el.runtime % 60} s`,    
+        time: `${Math.floor(el.runtime / 60)} h ${el.runtime % 60} m`,    
         language: el.language,
         youtube: `https://www.youtube.com/embed/${el.youtubeId}`,
         summary: el.summary,
@@ -46,9 +48,9 @@ function renderData(data){
                             <li><strong>Janr: ${el.genres}</strong></li>
                             <li><strong>Reyting: ${el.rating}</strong></li>
                             <li><strong>Til: ${el.language}</strong></li>
-                            <li><strong>Davomiyligi: ${el.runtime}</strong></li>
+                            <li><strong>Davomiyligi: ${el.time}</strong></li>
+                            <li><strong><a href="https://www.youtube.com/embed/${el.youtube}" blank_ >Read more</a></strong></li>
                         </ul>
-
                     </div>
                 `)
                 cardWrapper.append(card)
@@ -56,9 +58,52 @@ function renderData(data){
             
         }
         else {
-            cardWrapper.innerHTML = '<p style="color: #fff; font-size: 20px; font-weight: 600;">System Error!</p>'
+            cardWrapper.innerHTML = '<p style="color: #fff; font-size: 20px; font-weight: 600;">Sorry! Something was wrong(</p>';
         }
     }, 1500);
 }
 
 renderData(normalize)
+
+
+
+// search
+
+search.addEventListener('keyup', () =>{
+    const value = search.value.toLowerCase();
+    const filteredData = normalize.filter(el => el.title.toLocaleLowerCase().includes(value));
+    renderData(filteredData)
+})
+
+
+
+
+// render options
+
+const genres = [];
+
+function renderedOptions(data){
+    data.forEach(movie => {
+        movie.genres.forEach(genre => {
+            if(!genres.includes(genre)){
+                genres.push(genre)
+            }
+        })
+    })
+    genres.forEach(genre => {
+        const options = createElement('option', 'options-item', genre);
+        perfectGenreFilm.append(option)
+    });
+}
+
+renderedOptions(normalize)
+
+// perfect search
+
+function perfectSearch (data){
+    const valueRating = Math.floor(Number(perfectSearchFilmRating.value));
+
+    const newData = data.filter(el => el.title.toLocaleLowerCase().includes(perfectSearchFilm.value.toLowerCase)) && el.genres.includes(perfectGenreFilm.value);
+    renderData(newData);
+    console.log(newData);
+}

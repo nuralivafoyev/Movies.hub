@@ -63,7 +63,7 @@ var movies = [
         ],
         "imdbId": "tt0329374",
         "imdbRating": 6.6,
-        "runtime": 0,
+        "runtime": 70,
         "language": "English",
         "youtubeId": "JA03ciYt-Ek",
         "summary": "The villains from the popular animated Disney films are gathered at the House of Mouse with plans to take over. Soon, the villains take over the house and kick out Mickey, Donald and Goofy. It's all up to Mickey and his friends to overthrow evil and return the House of Mouse to normal--or as close to normal as it get's.",

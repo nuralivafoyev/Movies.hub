@@ -272,6 +272,11 @@ img {
     color: #a1a9b4;
 }
 
+.card ul li a {
+    color: #a1a9b4;
+    text-decoration: underline;
+}
+
 .card_wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
