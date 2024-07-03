@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--===================== box icons ================ -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+        <link rel="stylesheet" href="./styles/sceleton.css">
+
+        <!--===================== main css ===================-->
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <title>Movies hub</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <a class="site_logo" href="#">Movies.<span>hub</span></a>
+
+                    <ul>
+                        <li><a href="#">Bosh sahifa</a></li>
+
+                        <li>
+                            <select>
+                                <option selected value="0">Kinolar</option>
+                                <option value="1">Tarjima kinolar</option>
+                                <option value="2">Premyeralar</option>
+                                <option value="3">Hind kinolari</option>
+                                <option value="4">MUltfilmlar</option>
+                                <option value="5">Kino yangiliklari</option>
+                            </select>
+                        </li>
+
+                        <li><a href="#">Seriallar</a></li>
+
+                        <li>
+                            <select>
+                                <option selected value="0">Janr</option>
+                                <option value="1">Jangari</option>
+                                <option value="2">Drama</option>
+                                <option value="3">Komediya</option>
+                                <option value="4">Melodrama</option>
+                                <option value="5">Sarguzasht</option>
+                                <option value="6">Qo'rqinchli</option>
+                                <option value="7">Tarixiy</option>
+                                <option value="8">Klassika</option>
+                                <option value="9">Fantastika</option>
+                                <option value="10">Hayotiy</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <select>
+                                <option selected value="0">Yil</option>
+                                <option value="1">2024</option>
+                                <option value="2">2023</option>
+                                <option value="3">2022</option>
+                                <option value="4">2021</option>
+                                <option value="5">2020</option>
+                                <option value="6">2019</option>
+                                <option value="7">2018</option>
+                                <option value="8">2017</option>
+                                <option value="9">2016</option>
+                                <option value="10">2015</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <select>
+                                <option selected value="0">Mamlakat</option>
+                                <option value="1">Rossiya</option>
+                                <option value="2">AQSH</option>
+                                <option value="3">Turkiya</option>
+                                <option value="4">Xitoy</option>
+                                <option value="5">Hindiston</option>
+                                <option value="6">Avstraliya</option>
+                                <option value="7">Buyuk Britaniya</option>
+                                <option value="8">Janubiy Koreya</option>
+                                <option value="9">Ukraina</option>
+
+                            </select>
+                        </li>
+
+                        <li><a href="#">KIno yangiliklari</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="register_section">
+                <div class="container">
+                    <div class="register_section_top">
+                        <div class="register_btns">
+                            <button class="login_btn"><i
+                                    class='bx bx-user'></i>Kirish</button>
+                            <button class="signin_btn">Ro'yxatdan
+                                o'tish</button>
+                        </div>
+                        <div class="other_btns">
+                            <a href="tel:+998908065775"><button><i
+                                        class='bx bx-headphone'></i>Biz bilan
+                                    bog'lanish</button></a>
+                            <input type="checkbox" id="theme">
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input id="search" type="search"
+                            placeholder="Qidirish...">
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards_section">
+                <div class="container">
+                    <div class="card_wrapper" id="cards">
+
+                        
+                        <!--======= dynamic cocntent ========-->
+
+
+                        <!--=========== sceleton ===============-->
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 90%;">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 60%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 75%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sceleton">
+                            <div class="card-header animated-bg"
+                                id="header"></div>
+
+                            <div class="card-content">
+                                <h3
+                                    class="card-title animated-bg animated-bg-text"
+                                    id="title">
+                                    &nbsp;
+                                </h3>
+                                <p class="card-excerpt" id="excerpt">
+                                    <!-- &nbsp; -->
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80%;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text" style="width: 80px;">&nbsp;</span>
+                                    <span
+                                        class="animated-bg animated-bg-text">&nbsp;</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--=========== sceleton ===============-->
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <a href="https://t.me/vafoyev_n" class="contact-tg">
+            <i class='bx bxl-telegram'></i>
+            <span>Telegram</span>
+        </a>
+
+    </body>
+
+    <script src="./js/db.js"></script>
+    <script src="./js/utilites.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/script.js"></script>
+</html>

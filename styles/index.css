@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*=============== asosiy ================*/
+body{
+    background-color: #131a20;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.theme{
+    background-color: #9ea3b9b6;
+}
+
+main {
+    margin-top: 90px;
+}
+
+/*=============== asosiy ================*/
+
+
+/*=============== header start =============*/
+
+.site_logo {
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.site_logo span {
+    color: orange;
+}
+
+.site_logo:hover {
+    transform: scale(1.11) rotate(1deg);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #222933da;
+    height: 90px;
+    backdrop-filter: blur(10px);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    padding: 5px;
+    color: #a1a9b4;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li select {
+    background: none;
+    border: none;
+    color: #a1a9b4;
+    font-size: 14px;
+    width: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+nav ul li select:hover{
+    color: #fff;
+}
+
+nav ul li select:focus {
+    outline: none;
+}
+
+nav ul li select option {
+    background-color: #131a20;
+}
+/*=============== header end =============*/
+
+/*================ register section start =============*/
+
+.register_section {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.register_section_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_section_top .register_btns button {
+    background-color: #222933b9;
+    color: #a1a9b4;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 0.5px solid #a1a9b42a;
+}
+
+.other_btns {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#theme {
+    appearance: none;
+    width: 60px;
+    height: 25px;
+    background-color: #222933;
+    border-radius: 50px;
+    border: 0.5px solid #a1a9b42a;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#theme::after {
+    content: "\263c";
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #131a20;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    /* margin-left: 5px; */
+
+    transform: translateX(1px);
+    top: 0.5px;
+}
+
+#theme:checked::after {
+    content: "\263D";
+    transform: translateX(35px);
+}
+
+.other_btns button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #a1a9b4;
+    background-color: #222933;
+    border: 0.5px solid #a1a9b446;
+
+}
+
+#search {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 0.5px solid #a1a9b446;
+    background-color: #222933d3;
+    margin-top: 20px;
+    color: #a1a9b4;
+    overflow: hidden;
+}
+/*================ register section end =============*/
+
+
+
+
+/*================ cards section strat =============*/
+.cards_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2229338e;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #131a20c5;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: rgba(48, 48, 90, 0.479) 0px 6px 12px -2px, 
+                rgba(0, 0, 0, 0.527) 0px 3px 7px -3px;
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    width: 200px;
+    height: 100px;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.card:hover {
+    box-shadow: #8785a744 0px 10px 20px, 
+                #979ba12a 0px 10px 15px;
+}
+
+.card h2 {
+    font-weight: 600;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.card ul {
+    padding: 10px;
+}
+
+.card ul li {
+    font-size: 14px;
+    padding-top: 4px;
+    color: #a1a9b4;
+}
+
+.card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap:20px;
+}
+/*================ cards section end =============*/
+
+
+/*================ telegram contact ================ */
+.contact-tg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+    padding-left: 20px;
+    bottom: 50px;
+    text-align: center;
+    left: 91%;
+    border-radius: 50px;
+    width: 1100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2f88ee;
+    box-shadow: 0px 0px 9px #c0c0c0ab;
+    border: 1px solid #ffffffd3;
+}
+/*================ telegram contact ================ */
