@@ -39,12 +39,10 @@ button:hover {
 main {
     margin-top: 90px;
 }
-
 /*=============== asosiy ================*/
 
 
 /*=============== header start =============*/
-
 .site_logo {
     font-size: 25px;
     margin-bottom: 5px;
@@ -127,8 +125,10 @@ nav ul li select option {
 }
 /*=============== header end =============*/
 
-/*================ register section start =============*/
 
+
+
+/*================ register section start =============*/
 .register_section {
     width: 100%;
     padding-top: 20px;
@@ -219,7 +219,7 @@ nav ul li select option {
 
 /*================ cards section strat =============*/
 .cards_section {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
     margin-top: 20px;
     width: 100%;
@@ -281,8 +281,63 @@ img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap:20px;
+    padding-top: 5px;
+}
+
+.premyera p{
+    position: relative;
+    font-weight: 600;
+    font-size: 26px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #a1a9b4;
+    position: relative;
+    padding-left: 10px;
+    width: 15%;
+    transition: all 0.8s ease;
+}
+
+.premyera p::before {
+    content: "PREMYERA";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: orange;
+    border-right: 3px solid orange;
+    transition: all 0.8s ease-in-out;
+}
+
+.premyera p:hover {
+    -webkit-text-stroke: 0.5px orange;
+}
+
+.premyera p:hover::before {
+    width: 100%;
 }
 /*================ cards section end =============*/
+
+
+
+/*================ footer start ===================*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #131a20;
+}
+
+.footer_content {
+    padding-top: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.footer_content p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #a1a9b4;
+} 
+/*================ footer start ===================*/
+
 
 
 /*================ telegram contact ================ */
@@ -305,5 +360,13 @@ img {
     background-color: #2f88ee;
     box-shadow: 0px 0px 9px #c0c0c0ab;
     border: 1px solid #ffffffd3;
+    transition: all 0.3s ease;
+}
+
+.contact-tg:hover {
+    box-shadow: 0px 0px 15px #c0c0c0ab;
+    background-color: #fff;
+    color: #2f88ee;
+    border: 1px solid #2f88ee;
 }
 /*================ telegram contact ================ */

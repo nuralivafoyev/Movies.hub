@@ -5,7 +5,7 @@ const   cardWrapper = document.getElementById("cards"),
         perfectSearchFilm = document.getElementById("search_film"),
         perfectGenreFilm = document.getElementById("genre_film");
         
-const data = movies.splice(0, 100);
+const data = movies.splice(0, 300);
 
 
 //  normalize 
@@ -49,7 +49,7 @@ function renderData(data){
                             <li><strong>Reyting: ${el.rating}</strong></li>
                             <li><strong>Til: ${el.language}</strong></li>
                             <li><strong>Davomiyligi: ${el.time}</strong></li>
-                            <li><strong><a href="https://www.youtube.com/embed/${el.youtube}" blank_ >Read more</a></strong></li>
+                            <li><strong><a href="${el.youtube}" target="_blank" >Read more</a></strong></li>
                         </ul>
                     </div>
                 `)
