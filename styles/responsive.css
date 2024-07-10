@@ -1,0 +1,66 @@
+@media (max-width: 1079px) {
+    header nav ul {
+        display: none;
+    }
+
+    .card_wrapper {
+        display: grid;
+grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-tg {
+        left: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .card_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    .contact-tg {
+        left: 75%;
+        padding-left: 10px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    #theme {
+        display: none;
+    }
+    
+}
+
+
+
+@media (max-width: 420px) {
+    .card_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .card {
+        width: 160px;
+        height: 250px;
+    }
+
+    .card ul li {
+        font-size: 10px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+    .contact-tg {
+        left: 70%;
+        padding-left: 10px;
+        font-size: 16px;
+        height: 40px;
+    }
+}
